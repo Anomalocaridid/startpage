@@ -1,25 +1,47 @@
 :root {
-    --main-txt-color: #0ABDC6;
-    --detail-txt-color: #711C91;
+    --header-text-color:       #0ABDC6;
+    --header-background-color: #262F3F;
+    --detail-text-color:       #711C91;
+    /* Colors used in the gradient background */
+    --dark-background-color:   #000B1E;
+    --light-background-color:  #091833;
 }
 
 .header {
-    background-image:
+    height: 5%;
+    color: var(--header-text-color);
+    font-family: 'AIRBORNEGPBOLD';
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0;
+    background-color: var(--header-background-color);
 }
  
 .search-bar {
     overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 408px;
+    width: 40%;
     height: 40px;
+    margin: .5% auto;
+    padding: 0;
 }
 
-h1 {
-   color: var(--main-txt-color);
+body {
+    margin: 0; 
 }
 
 html {
-    background-image: linear-gradient(to bottom right, #000B1E, #091833);
+    background-image: linear-gradient(
+                          to bottom right,
+                          var(--dark-background-color),
+                          var(--light-background-color)
+                      );
     height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0 auto;
 }
