@@ -1,0 +1,25 @@
+:root {
+    --main-txt-color: #0ABDC6;
+    --detail-txt-color: #711C91;
+}
+
+.header {
+    background-image:
+}
+ 
+.search-bar {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 408px;
+    height: 40px;
+}
+
+h1 {
+   color: var(--main-txt-color);
+}
+
+html {
+    background-image: linear-gradient(to bottom right, #000B1E, #091833);
+    height: 100%;
+}
