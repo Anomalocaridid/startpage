@@ -1,47 +1,51 @@
 :root {
     --header-text-color:       #0ABDC6;
     --header-background-color: #262F3F;
-    --detail-text-color:       #711C91;
+    --detail-color:            #711C91;
     /* Colors used in the gradient background */
     --dark-background-color:   #000B1E;
     --light-background-color:  #091833;
 }
 
-.header {
-    height: 5%;
-    color: var(--header-text-color);
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.title {
+    margin: 0.5%;
     font-family: 'AIRBORNEGPBOLD';
     font-weight: bold;
-    font-style: normal;
+    font-size: 200%;
+    color: var(--header-text-color);
+}
+
+.header {
+    height: 20%;
     text-align: center;
-    padding: 1% 0;
-    margin: 0;
     background-color: var(--header-background-color);
+    border-bottom: 3px solid var(--detail-color);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around; 
+    align-items: center;
 }
  
 .search-bar {
     overflow: hidden;
     width: 40%;
-    height: 40px;
-    margin: .5% auto;
-    padding: 0;
+    height: 40%;
 }
 
-body {
-    margin: 0; 
-}
-
-html {
+.menu {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
     background-image: linear-gradient(
                           to bottom right,
                           var(--dark-background-color),
                           var(--light-background-color)
                       );
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-h1 {
-    margin: 0 auto;
+    display: flex;
 }
