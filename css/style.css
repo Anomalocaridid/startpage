@@ -27,7 +27,7 @@ html, body {
     background-color: var(--header-background-color);
     border-bottom: 3px solid var(--detail-color);
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-around; 
     align-items: center;
 }
