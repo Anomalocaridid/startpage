@@ -17,6 +17,7 @@
 
 h1 {
    color: var(--main-txt-color);
+   font-family: 'virgo_01regular';
 }
 
 html {
