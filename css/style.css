@@ -13,14 +13,16 @@ html, body {
     margin: 0;
 }
 
+/* The text that reads "WELCOME BACK."  */
 .title {
     margin:      0.5%;
     font-family: 'AIRBORNEGPBOLD';
     font-weight: bold;
-    font-size:   100%;
+    font-size:   150%;
     color:       var(--header-text-color);
 }
 
+/* The grey box at the top. */
 .header {
     height:           20%;
     text-align:       center;
@@ -31,13 +33,15 @@ html, body {
     justify-content:  space-around; 
     align-items:      center;
 }
- 
+
+/* Search bar for DuckDuckGo  */
 .search-bar {
     overflow: hidden;
     width:    80%;
     height:   40%;
 }
 
+/* The dark blue space that takes up most of the screen. */
 .menu {
     width:            100%;
     height:           80%;
@@ -53,9 +57,9 @@ html, body {
 /* For landscape mode only. Everything before is for portrait mode. */
 @media only screen and (max-width: 768px) {
     @media only screen and (orientation: landscape) {
-        /*.title {
-
-        }*/
+        .title {
+            font-size: 100%;
+        }
         .header {
             height: 30%;
         }
