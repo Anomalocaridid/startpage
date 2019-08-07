@@ -1,16 +1,23 @@
 :root {
-    --header-text-color:       #0ABDC6;
-    --header-background-color: #262F3F;
-    --detail-color:            #711C91;
+    /* Color of text and icons */
+    --main-color:             #0ABDC6;
+
+    /* Header background color */
+    --header-color:           #262F3F;
+
+    /* Color to be used as an accent */
+    --detail-color:           #711C91;
+
     /* Colors used in the gradient background */
-    --dark-background-color:   #000B1E;
-    --light-background-color:  #091833;
+    --dark-background-color:  #000B1E;
+    --light-background-color: #091833;
 }
 
 html, body {
     height: 100%;
     width:  100%;
     margin: 0;
+    padding: 0;
 }
 
 /* The text that reads "WELCOME BACK."  */
@@ -19,14 +26,14 @@ html, body {
     font-family: 'AIRBORNEGPBOLD';
     font-weight: bold;
     font-size:   150%;
-    color:       var(--header-text-color);
+    color:       var(--main-color);
 }
 
 /* The grey box at the top. */
 .header {
     height:           20%;
     text-align:       center;
-    background-color: var(--header-background-color);
+    background-color: var(--header-color);
     border-bottom:    3px solid var(--detail-color);
     display:          flex;
     flex-flow:        column nowrap;
@@ -52,10 +59,50 @@ html, body {
                           var(--light-background-color)
                       );
     display:          flex;
+    flex-flow:        row wrap;
+    justify-content:  space-evenly;
+    align-items:      center;
+    align-content:    stretch;
 }
 
-/* For landscape mode only. Everything before is for portrait mode. */
+/* The links in the menu section */
+a:hover.menu-item {
+    background-color: var(--header-color);
+    border-color:     var(--header-color);
+}
+
+a:active.menu-item {
+    background-color: var(--main-color);
+    color:            var(--detail-color);
+    border-color:     var(--main-color);
+}
+
+.menu-item {
+    width:           10%;
+    height:          25%;
+    font-size:       400%;
+    margin:          0% 2%;
+    color:           var(--main-color);
+    border:          3px solid var(--detail-color);
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+}
+
+/* For phones only. */
 @media only screen and (max-width: 768px) {
+
+    /* Links to be hidden on mobile but stay on desktop. */
+    a[href*="discord"],
+    a[href*="protonmail"],
+    a[href*="soundcloud"],
+    a[href*="youtube"],
+    a[href*="reddit"]
+    {
+        display: none;
+    }
+
+    /* For landscape mode only. Everything before is for portrait mode. */
     @media only screen and (orientation: landscape) {
         .title {
             font-size: 100%;
@@ -69,10 +116,17 @@ html, body {
         .menu {
             height: 70%;
         }   
+        /*.menu-item {
+
+        }*/
     }
 }
-/* For desktops only. Everything before is for smaller screens.*/
+
+/* For desktops only.*/
 @media only screen and (min-width: 768px) {
+    html {
+        overflow: hidden;
+    }
     .title {
         font-size: 200%;
     }
@@ -84,5 +138,11 @@ html, body {
     }
     /*.menu {
 
+    }*/
+    /*.menu-item {
+        width: 10%;
+        height: 25%;
+        font-size: 400%;
+        margin: 0% 3%;
     }*/
 }
