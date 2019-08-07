@@ -9,47 +9,64 @@
 
 html, body {
     height: 100%;
-    width: 100%;
+    width:  100%;
     margin: 0;
 }
 
 .title {
-    margin: 0.5%;
+    margin:      0.5%;
     font-family: 'AIRBORNEGPBOLD';
     font-weight: bold;
-    font-size: 100%;
-    color: var(--header-text-color);
+    font-size:   100%;
+    color:       var(--header-text-color);
 }
 
 .header {
-    height: 20%;
-    text-align: center;
+    height:           20%;
+    text-align:       center;
     background-color: var(--header-background-color);
-    border-bottom: 3px solid var(--detail-color);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around; 
-    align-items: center;
+    border-bottom:    3px solid var(--detail-color);
+    display:          flex;
+    flex-flow:        column nowrap;
+    justify-content:  space-around; 
+    align-items:      center;
 }
  
 .search-bar {
     overflow: hidden;
-    width: 80%;
-    height: 40%;
+    width:    80%;
+    height:   40%;
 }
 
 .menu {
-    width: 100%;
-    height: 80%;
-    margin: 0 auto;
+    width:            100%;
+    height:           80%;
+    margin:           0 auto;
     background-image: linear-gradient(
                           to bottom right,
                           var(--dark-background-color),
                           var(--light-background-color)
                       );
-    display: flex;
+    display:          flex;
 }
 
+/* For landscape mode only. Everything before is for portrait mode. */
+@media only screen and (max-width: 768px) {
+    @media only screen and (orientation: landscape) {
+        /*.title {
+
+        }*/
+        .header {
+            height: 30%;
+        }
+        /*.search-bar {
+
+        }*/
+        .menu {
+            height: 70%;
+        }   
+    }
+}
 /* For desktops only. Everything before is for smaller screens.*/
 @media only screen and (min-width: 768px) {
     .title {
