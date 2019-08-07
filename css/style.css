@@ -18,6 +18,7 @@ html, body {
     width:  100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* The text that reads "WELCOME BACK."  */
@@ -59,7 +60,7 @@ html, body {
                           var(--light-background-color)
                       );
     display:          flex;
-    flex-flow:        row wrap;
+    flex-flow:        column wrap;
     justify-content:  space-evenly;
     align-items:      center;
     align-content:    space-around;
@@ -78,8 +79,8 @@ a:active.menu-item {
 }
 
 .menu-item {
-    width:           10%;
-    height:          25%;
+    width: 20%;
+    height: 20%;
     font-size:       400%;
     margin:          0% 2%;
     color:           var(--main-color);
@@ -115,6 +116,7 @@ a:active.menu-item {
         }
         .menu {
             height: 70%;
+            flex-direction: row;
         }   
         /*.menu-item {
 
@@ -124,9 +126,6 @@ a:active.menu-item {
 
 /* For desktops only.*/
 @media only screen and (min-width: 768px) {
-    html {
-        overflow: hidden;
-    }
     .title {
         font-size: 200%;
     }
@@ -136,13 +135,11 @@ a:active.menu-item {
     .search-bar {
         width: 40%;
     }
-    /*.menu {
-
-    }*/
-    /*.menu-item {
+    .menu {
+        flex-direction: row;
+    }
+    .menu-item {
         width: 10%;
         height: 25%;
-        font-size: 400%;
-        margin: 0% 3%;
-    }*/
+    }
 }
