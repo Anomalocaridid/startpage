@@ -118,9 +118,10 @@ a:active.menu-item {
             height:         70%;
             flex-direction: row;
         }   
-        /*.menu-item {
-
-        }*/
+        .menu-item {
+            width: 10%
+            height: 30%
+        }
     }
 }
 
