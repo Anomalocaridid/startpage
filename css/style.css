@@ -99,7 +99,7 @@ a:active.menu-item {
     a[href*="protonmail"],
     a[href*="reddit"],
     a[href*="soundcloud"],
-    a[href*="youtube"],
+    a[href*="youtube"]
     {
         display: none;
     }
