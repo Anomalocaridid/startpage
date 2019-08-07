@@ -59,9 +59,9 @@ html, body {
         .header {
             height: 30%;
         }
-        /*.search-bar {
-
-        }*/
+        .search-bar {
+            height: 45%;
+        }
         .menu {
             height: 70%;
         }   
