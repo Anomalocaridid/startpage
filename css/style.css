@@ -17,7 +17,7 @@ html, body {
     margin: 0.5%;
     font-family: 'AIRBORNEGPBOLD';
     font-weight: bold;
-    font-size: 200%;
+    font-size: 100%;
     color: var(--header-text-color);
 }
 
@@ -34,7 +34,7 @@ html, body {
  
 .search-bar {
     overflow: hidden;
-    width: 40%;
+    width: 80%;
     height: 40%;
 }
 
@@ -48,4 +48,20 @@ html, body {
                           var(--light-background-color)
                       );
     display: flex;
+}
+
+/* For desktops only. Everything before is for smaller screens.*/
+@media only screen and (min-width: 768px) {
+    .title {
+        font-size: 200%;
+    }
+    /*.header {
+        
+    }*/
+    .search-bar {
+        width: 40%;
+    }
+    /*.menu {
+
+    }*/
 }
