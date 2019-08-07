@@ -94,11 +94,12 @@ a:active.menu-item {
 @media only screen and (max-width: 768px) {
 
     /* Links to be hidden on mobile but stay on desktop. */
+    a[href*="bandcamp"].
     a[href*="discord"],
     a[href*="protonmail"],
+    a[href*="reddit"]
     a[href*="soundcloud"],
     a[href*="youtube"],
-    a[href*="reddit"]
     {
         display: none;
     }
@@ -120,7 +121,7 @@ a:active.menu-item {
         }   
         .menu-item {
             width: 20%;
-            height: 50%;
+            height: 45%;
         }
     }
 }
