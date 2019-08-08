@@ -106,7 +106,7 @@ a:active.menu-item {
     }
 
     /* For landscape mode only. Everything before is for portrait mode. */
-    @media only screen and (orientation: landscape) {
+    @media only screen and (min-aspect-ratio: 13/9) {
         /*.title {
         }*/
         .header {
@@ -116,7 +116,7 @@ a:active.menu-item {
             display: none;
         }
         .menu {
-            height:         70%;
+            height: 70%;
         }   
         .menu-item {
             width:  15%;
