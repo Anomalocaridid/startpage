@@ -33,7 +33,7 @@ html, body {
 
 /* The grey box at the top. */
 .header {
-    height:           20%;
+    height:           30%;
     text-align:       center;
     background-color: var(--header-color);
     border-bottom:    3px solid var(--detail-color);
@@ -48,13 +48,13 @@ html, body {
 .search-bar {
     overflow: hidden;
     width:    80%;
-    height:   60%;
+    height:   40%;
 }
 
 /* The dark blue space that takes up most of the screen. */
 .menu {
     width:            100%;
-    height:           80%;
+    height:           70%;
     margin:           0 auto;
     background-image: linear-gradient(
                           to bottom right,
@@ -137,11 +137,14 @@ a:active.menu-item {
     }
     .header {
         padding: 0%;    
+        height: 20%;
     }
     .search-bar {
         width: 40%;
+        height: 40%;
     }
     .menu {
+        height: 80%;
     }
     .menu-item {
         width:     10%;
