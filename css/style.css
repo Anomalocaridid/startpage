@@ -33,7 +33,7 @@ html, body {
 
 /* The grey box at the top. */
 .header {
-    height:           25%;
+    height:           20%;
     text-align:       center;
     background-color: var(--header-color);
     border-bottom:    3px solid var(--detail-color);
@@ -48,13 +48,13 @@ html, body {
 .search-bar {
     overflow: hidden;
     width:    80%;
-    height:   55%;
+    height:   40%;
 }
 
 /* The dark blue space that takes up most of the screen. */
 .menu {
     width:            100%;
-    height:           75%;
+    height:           80%;
     margin:           0 auto;
     background-image: linear-gradient(
                           to bottom right,
@@ -104,6 +104,13 @@ a:active.menu-item {
     a[href*="youtube"] 
     {
         display: none;
+    }
+
+    /* For when a soft keyboard is out */
+    @media only screen and (orientation: landscape) {
+        .search-bar {
+            height: 55%;
+        }
     }
 
     /* For landscape mode only. Everything before is for portrait mode. */
