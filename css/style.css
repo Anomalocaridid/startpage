@@ -37,6 +37,7 @@ html, body {
     text-align:       center;
     background-color: var(--header-color);
     border-bottom:    3px solid var(--detail-color);
+    padding:          1% 0%;
     display:          flex;
     flex-flow:        column nowrap;
     justify-content:  space-around; 
@@ -112,6 +113,7 @@ a:active.menu-item {
         }
         .header {
             height: 30%;
+            padding: 0%;
         }
         .search-bar {
             display: none;
@@ -133,9 +135,9 @@ a:active.menu-item {
     .title {
         font-size: 200%;
     }
-    /*.header {
-        
-    }*/
+    .header {
+        padding: 0%;    
+    }
     .search-bar {
         width: 40%;
     }
