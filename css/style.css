@@ -108,57 +108,76 @@ a:active.menu-item {
 
     /* For when a soft keyboard is out */
     @media only screen and (orientation: landscape) {
+
+        /*.title {
+        }*/
+
         .header {
             height: 25%;
         }
+
         .search-bar {
             height: 55%;
         }
+
         .menu {
             height: 75%;
+        }
+
+        .menu-item {
+            font-size: 325%
         }
     }
 
     /* For landscape mode only. Everything before is for portrait mode. */
     @media only screen and (min-aspect-ratio: 13/9) {
+
         .title {
             font-size: 250%;
         }
+
         .header {
             height: 30%;
             padding: 0%;
         }
+
         .search-bar {
             display: none;
         }
+
         .menu {
             height: 70%;
         }   
+
         .menu-item {
             width:     15%;
             height:    45%;
             margin:    0% 1%;
-            /*font-size: 400%;*/
         }
     }
 }
 
 /* For desktops only.*/
 @media only screen and (min-width: 768px) {
+
     .title {
         font-size: 200%;
     }
+
     .header {
         padding: 0%;    
         height: 20%;
     }
+
     .search-bar {
         width: 40%;
         height: 40%;
     }
+
     .menu {
         height: 80%;
     }
+
     .menu-item {
         width:     10%;
         height:    25%;
