@@ -42,7 +42,6 @@ html, body {
     flex-flow:        column nowrap;
     justify-content:  space-around; 
     align-items:      center;
-    overflow:         hidden;
 }
 
 /* Search bar for DuckDuckGo  */
