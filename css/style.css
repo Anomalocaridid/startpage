@@ -21,9 +21,6 @@ html, body {
     overflow: hidden;
 }
 
-body {
-    position: relative;
-}
 
 /* The text that reads "WELCOME BACK."  */
 .title {
@@ -68,7 +65,6 @@ body {
     justify-content:  space-evenly;
     align-items:      center;
     align-content:    space-around;
-    position:         absolute;
 }
 
 /* The links in the menu section */
@@ -111,21 +107,20 @@ a:active.menu-item {
 
     /* For landscape mode only. Everything before is for portrait mode. */
     @media only screen and (orientation: landscape) {
-        .title {
-            font-size: 100%;
-        }
+        /*.title {
+        }*/
         .header {
             height: 30%;
         }
         .search-bar {
-            height: 50%;
+            display: none;
         }
         .menu {
             height:         70%;
             flex-direction: row;
         }   
         .menu-item {
-            width: 15%;
+            width:  15%;
             height: 45%;
             margin: 0% 1%;
         }
