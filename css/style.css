@@ -61,7 +61,7 @@ html, body {
                           var(--light-background-color)
                       );
     display:          flex;
-    flex-flow:        column wrap;
+    flex-flow:        row wrap;
     justify-content:  space-evenly;
     align-items:      center;
     align-content:    space-around;
@@ -117,7 +117,6 @@ a:active.menu-item {
         }
         .menu {
             height:         70%;
-            flex-direction: row;
         }   
         .menu-item {
             width:  15%;
@@ -139,7 +138,6 @@ a:active.menu-item {
         width: 40%;
     }
     .menu {
-        flex-direction: row;
     }
     .menu-item {
         width:  10%;
