@@ -107,8 +107,9 @@ a:active.menu-item {
 
     /* For landscape mode only. Everything before is for portrait mode. */
     @media only screen and (min-aspect-ratio: 13/9) {
-        /*.title {
-        }*/
+        .title {
+            font-size: 250%;
+        }
         .header {
             height: 30%;
         }
@@ -119,9 +120,10 @@ a:active.menu-item {
             height: 70%;
         }   
         .menu-item {
-            width:  15%;
-            height: 45%;
-            margin: 0% 1%;
+            width:     15%;
+            height:    45%;
+            margin:    0% 1%;
+            font-size: 400%;
         }
     }
 }
@@ -140,7 +142,8 @@ a:active.menu-item {
     .menu {
     }
     .menu-item {
-        width:  10%;
-        height: 25%;
+        width:     10%;
+        height:    25%;
+        font-size: 400%;
     }
 }
