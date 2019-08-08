@@ -21,6 +21,10 @@ html, body {
     overflow: hidden;
 }
 
+body {
+    position: relative;
+}
+
 /* The text that reads "WELCOME BACK."  */
 .title {
     margin:      0.5%;
@@ -64,6 +68,7 @@ html, body {
     justify-content:  space-evenly;
     align-items:      center;
     align-content:    space-around;
+    position:         absolute;
 }
 
 /* The links in the menu section */
