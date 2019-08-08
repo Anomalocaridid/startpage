@@ -14,30 +14,47 @@
 }
 
 html, body {
+    /* Size */
     height: 100%;
     width:  100%;
+
+    /* Spacing */
     margin: 0;
     padding: 0;
+    
+    /* Content Formatting */
     overflow: hidden;
 }
 
 
 /* The text that reads "WELCOME BACK."  */
 .title {
+    /* Size */
+    font-size:   150%;
+
+    /* Spacing */
     margin:      0.5%;
+
+    /* Appearance */
     font-family: 'AIRBORNEGPBOLD';
     font-weight: bold;
-    font-size:   150%;
     color:       var(--main-color);
 }
 
 /* The grey box at the top. */
 .header {
+    /* Size */
     height:           20%;
-    text-align:       center;
+
+    /* Spacing */
+    padding:          1% 0%;
+
+    /* Appearence */
     background-color: var(--header-color);
     border-bottom:    3px solid var(--detail-color);
-    padding:          1% 0%;
+
+    /* Content Formatting */
+    text-align:       center;
     display:          flex;
     flex-flow:        column nowrap;
     justify-content:  space-around; 
@@ -46,21 +63,31 @@ html, body {
 
 /* Search bar for DuckDuckGo  */
 .search-bar {
-    overflow: hidden;
-    width:    80%;
+    /* Size */
     height:   40%;
+    width:    80%;
+
+    /* Content Formatting */
+    overflow: hidden;
 }
 
 /* The dark blue space that takes up most of the screen. */
 .menu {
+    /* Size */
     width:            100%;
     height:           80%;
+
+    /* Spacing */
     margin:           0 auto;
+
+    /* Appearance */
     background-image: linear-gradient(
                           to bottom right,
                           var(--dark-background-color),
                           var(--light-background-color)
                       );
+
+    /* Content Formatting */
     display:          flex;
     flex-flow:        row wrap;
     justify-content:  space-evenly;
@@ -70,23 +97,32 @@ html, body {
 
 /* The links in the menu section */
 a:hover.menu-item {
+    /* Appearance */
     background-color: var(--header-color);
     border-color:     var(--header-color);
 }
 
 a:active.menu-item {
+    /* Appearance */
     background-color: var(--main-color);
     color:            var(--detail-color);
     border-color:     var(--main-color);
 }
 
 .menu-item {
-    width: 25%;
-    height: 25%;
+    /* Size */
+    width:           25%;
+    height:          25%;
     font-size:       350%;
+
+    /* Spacing */
     margin:          0% 2%;
+
+    /* Appearance */
     color:           var(--main-color);
     border:          3px solid var(--detail-color);
+
+    /* Content Formatting */
     display:         flex;
     justify-content: center;
     align-items:     center;
@@ -103,6 +139,7 @@ a:active.menu-item {
     a[href*="soundcloud"],
     a[href*="youtube"] 
     {
+        /* Content Formatting */
         display: none;
     }
 
@@ -113,18 +150,22 @@ a:active.menu-item {
         }*/
 
         .header {
+            /* Size */
             height: 25%;
         }
 
         .search-bar {
+            /* Size */
             height: 55%;
         }
 
         .menu {
+            /* Size */
             height: 75%;
         }
 
         .menu-item {
+            /* Size */
             font-size: 325%
         }
     }
@@ -133,25 +174,34 @@ a:active.menu-item {
     @media only screen and (min-aspect-ratio: 13/9) {
 
         .title {
+            /* Size */
             font-size: 250%;
         }
 
         .header {
-            height: 30%;
+            /* Size */
+            height:  30%;
+            
+            /* Spacing */
             padding: 0%;
         }
 
         .search-bar {
+            /* Content Formatting */
             display: none;
         }
 
         .menu {
+            /* Size */
             height: 70%;
         }   
 
         .menu-item {
+            /* Size */
             width:     15%;
             height:    45%;
+
+            /* Spacing */
             margin:    0% 1%;
         }
     }
@@ -161,24 +211,31 @@ a:active.menu-item {
 @media only screen and (min-width: 768px) {
 
     .title {
+        /* Size */
         font-size: 200%;
     }
 
     .header {
+        /* Size */
+        height:  20%;
+
+        /* Spacing */
         padding: 0%;    
-        height: 20%;
     }
 
     .search-bar {
-        width: 40%;
+        /* Size */
+        width:  40%;
         height: 40%;
     }
 
     .menu {
+        /* Size */
         height: 80%;
     }
 
     .menu-item {
+        /* Size */
         width:     10%;
         height:    25%;
         font-size: 400%;
