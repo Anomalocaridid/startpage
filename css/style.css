@@ -1,16 +1,14 @@
 :root {
     /* Color of text and icons */
-    --main-color:             #0ABDC6;
-
-    /* Header background color */
-    --header-color:           #262F3F;
+    --main-color:            #0ABDC6;
 
     /* Color to be used as an accent */
-    --detail-color:           #711C91;
+    --detail-color:          #EA00D9;
 
-    /* Colors used in the gradient background */
-    --dark-background-color:  #000B1E;
-    --light-background-color: #091833;
+    /* Colors used as backgrounds */
+    --header-color:          #091833;
+    --menu-background-color: #000B1E;
+    --link-background-color: #133E7C;
 }
 
 html, body {
@@ -21,7 +19,7 @@ html, body {
     /* Spacing */
     margin: 0;
     padding: 0;
-    
+
     /* Content Formatting */
     overflow: hidden;
 }
@@ -57,7 +55,7 @@ html, body {
     text-align:       center;
     display:          flex;
     flex-flow:        column nowrap;
-    justify-content:  space-around; 
+    justify-content:  space-around;
     align-items:      center;
 }
 
@@ -81,11 +79,7 @@ html, body {
     margin:           0 auto;
 
     /* Appearance */
-    background-image: linear-gradient(
-                          to bottom right,
-                          var(--dark-background-color),
-                          var(--light-background-color)
-                      );
+    background-color: var(--menu-background-color);
 
     /* Content Formatting */
     display:          flex;
@@ -104,9 +98,9 @@ a:hover.menu-item {
 
 a:active.menu-item {
     /* Appearance */
-    background-color: var(--main-color);
+    background-color: var(--link-background-color);
     color:            var(--detail-color);
-    border-color:     var(--main-color);
+    border-color:     var(--link-background-color);
 }
 
 .menu-item {
@@ -137,7 +131,7 @@ a:active.menu-item {
     a[href*="protonmail"],
     a[href*="reddit"],
     a[href*="soundcloud"],
-    a[href*="youtube"] 
+    a[href*="youtube"]
     {
         /* Content Formatting */
         display: none;
@@ -181,7 +175,7 @@ a:active.menu-item {
         .header {
             /* Size */
             height:  30%;
-            
+
             /* Spacing */
             padding: 0%;
         }
@@ -194,7 +188,7 @@ a:active.menu-item {
         .menu {
             /* Size */
             height: 70%;
-        }   
+        }
 
         .menu-item {
             /* Size */
@@ -220,7 +214,7 @@ a:active.menu-item {
         height:  20%;
 
         /* Spacing */
-        padding: 0%;    
+        padding: 0%;
     }
 
     .search-bar {
