@@ -107,7 +107,6 @@ a:active.menu-item {
     /* Size */
     width:           25%;
     height:          25%;
-    /*font-size:       350%;*/
 	font-size:       400%;
 
     /* Spacing */
@@ -161,7 +160,7 @@ a:active.menu-item {
 
         .menu-item {
             /* Size */
-            /*font-size: 325%*/
+            font-size: 325%
         }
     }
 
@@ -233,6 +232,5 @@ a:active.menu-item {
         /* Size */
         width:     10%;
         height:    25%;
-        /*font-size: 400%;*/
     }
 }
