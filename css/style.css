@@ -1,237 +1,237 @@
 :root {
-    /* Color of text and icons */
-    --main-color:            #0ABDC6;
+	/* Color of text and icons */
+	--main-color:            #0ABDC6;
 
-    /* Color to be used as an accent */
-    --detail-color:          #EA00D9;
+	/* Color to be used as an accent */
+	--detail-color:          #EA00D9;
 
-    /* Colors used as backgrounds */
-    --header-color:          #091833;
-    --menu-background-color: #000B1E;
-    --link-background-color: #133E7C;
+	/* Colors used as backgrounds */
+	--header-color:          #091833;
+	--menu-background-color: #000B1E;
+	--link-background-color: #133E7C;
 }
 
 html, body {
-    /* Size */
-    height: 100%;
-    width:  100%;
+	/* Size */
+	height: 100%;
+	width:  100%;
 
-    /* Spacing */
-    margin: 0;
-    padding: 0;
+	/* Spacing */
+	margin: 0;
+	padding: 0;
 
-    /* Content Formatting */
-    overflow: hidden;
+	/* Content Formatting */
+	overflow: hidden;
 }
 
 
 /* The text that reads "WELCOME BACK."  */
 .title {
-    /* Size */
-    font-size:   150%;
+	/* Size */
+	font-size:   150%;
 
-    /* Spacing */
-    margin:      0.5%;
+	/* Spacing */
+	margin:      0.5%;
 
-    /* Appearance */
-    font-family: 'AIRBORNEGPBold';
-    font-weight: bold;
-    color:       var(--main-color);
+	/* Appearance */
+	font-family: 'AIRBORNEGPBold';
+	font-weight: bold;
+	color:       var(--main-color);
 }
 
 /* The grey box at the top. */
 .header {
-    /* Size */
-    height:           20%;
+	/* Size */
+	height:           20%;
 
-    /* Spacing */
-    padding:          1% 0%;
+	/* Spacing */
+	padding:          1% 0%;
 
-    /* Appearence */
-    background-color: var(--header-color);
-    border-bottom:    3px solid var(--detail-color);
+	/* Appearence */
+	background-color: var(--header-color);
+	border-bottom:    3px solid var(--detail-color);
 
-    /* Content Formatting */
-    text-align:       center;
-    display:          flex;
-    flex-flow:        column nowrap;
-    justify-content:  space-around;
-    align-items:      center;
+	/* Content Formatting */
+	text-align:       center;
+	display:          flex;
+	flex-flow:        column nowrap;
+	justify-content:  space-around;
+	align-items:      center;
 }
 
 /* Search bar for DuckDuckGo  */
 .search-bar {
-    /* Size */
-    height:   40%;
-    width:    80%;
+	/* Size */
+	height:   40%;
+	width:    80%;
 
-    /* Content Formatting */
-    overflow: hidden;
+	/* Content Formatting */
+	overflow: hidden;
 }
 
 /* The dark blue space that takes up most of the screen. */
 .menu {
-    /* Size */
-    width:            100%;
-    height:           80%;
+	/* Size */
+	width:            100%;
+	height:           80%;
 
-    /* Spacing */
-    margin:           0 auto;
+	/* Spacing */
+	margin:           0 auto;
 
-    /* Appearance */
-    background-color: var(--menu-background-color);
+	/* Appearance */
+	background-color: var(--menu-background-color);
 
-    /* Content Formatting */
-    display:          flex;
-    flex-flow:        row wrap;
-    justify-content:  space-evenly;
-    align-items:      center;
-    align-content:    space-around;
+	/* Content Formatting */
+	display:          flex;
+	flex-flow:        row wrap;
+	justify-content:  space-evenly;
+	align-items:      center;
+	align-content:    space-around;
 }
 
 /* The links in the menu section */
 a:hover.menu-item {
-    /* Appearance */
-    background-color: var(--header-color);
-    border-color:     var(--header-color);
+	/* Appearance */
+	background-color: var(--header-color);
+	border-color:     var(--header-color);
 }
 
 a:active.menu-item {
-    /* Appearance */
-    background-color: var(--link-background-color);
-    color:            var(--detail-color);
-    border-color:     var(--link-background-color);
+	/* Appearance */
+	background-color: var(--link-background-color);
+	color:            var(--detail-color);
+	border-color:     var(--link-background-color);
 }
 
 .menu-item {
-    /* Size */
-    width:           25%;
-    height:          25%;
+	/* Size */
+	width:           25%;
+	height:          25%;
 	font-size:       400%;
 
-    /* Spacing */
-    margin:          0% 2%;
+	/* Spacing */
+	margin:          0% 2%;
 
-    /* Appearance */
-    color:           var(--main-color);
-    border:          3px solid var(--detail-color);
+	/* Appearance */
+	color:           var(--main-color);
+	border:          3px solid var(--detail-color);
 
-    /* Content Formatting */
-    display:         flex;
-    justify-content: center;
-    align-items:     center;
+	/* Content Formatting */
+	display:         flex;
+	justify-content: center;
+	align-items:     center;
 }
 
 /* For phones only. */
 @media only screen and (max-width: 768px) {
 
-    /* Links to be hidden on mobile but stay on desktop. */
-    a[href*="bandcamp"],
-    a[href*="discord"],
-    a[href*="protonmail"],
-    a[href*="reddit"],
-    a[href*="soundcloud"],
-    a[href*="youtube"]
-    {
-        /* Content Formatting */
-        display: none;
-    }
+	/* Links to be hidden on mobile but stay on desktop. */
+	a[href*="bandcamp"],
+	a[href*="discord"],
+	a[href*="protonmail"],
+	a[href*="reddit"],
+	a[href*="soundcloud"],
+	a[href*="youtube"]
+	{
+		/* Content Formatting */
+		display: none;
+	}
 
-    /* For when a soft keyboard is out */
-    @media only screen and (orientation: landscape) {
+	/* For when a soft keyboard is out */
+	@media only screen and (orientation: landscape) {
 
-        /*.title {
-        }*/
+		/*.title {
+		}*/
 
-        .header {
-            /* Size */
-            height: 25%;
-        }
+		.header {
+			/* Size */
+			height: 25%;
+		}
 
-        .search-bar {
-            /* Size */
-            height: 55%;
-        }
+		.search-bar {
+			/* Size */
+			height: 55%;
+		}
 
-        .menu {
-            /* Size */
-            height: 75%;
-        }
+		.menu {
+			/* Size */
+			height: 75%;
+		}
 
-        .menu-item {
-            /* Size */
-            font-size: 325%
-        }
-    }
+		.menu-item {
+			/* Size */
+			font-size: 325%
+		}
+	}
 
-    /* For landscape mode only. Everything before is for portrait mode. */
-    @media only screen and (min-aspect-ratio: 13/9) {
+	/* For landscape mode only. Everything before is for portrait mode. */
+	@media only screen and (min-aspect-ratio: 13/9) {
 
-        .title {
-            /* Size */
-            font-size: 250%;
-        }
+		.title {
+			/* Size */
+			font-size: 250%;
+		}
 
-        .header {
-            /* Size */
-            height:  30%;
+		.header {
+			/* Size */
+			height:  30%;
 
-            /* Spacing */
-            padding: 0%;
-        }
+sorted by: top (suggested)
 
-        .search-bar {
-            /* Content Formatting */
-            display: none;
-        }
+			/* Spacing */
+			padding: 0%;
+		}
 
-        .menu {
-            /* Size */
-            height: 70%;
-        }
+		.search-bar {
+			/* Content Formatting */
+			display: none;
+		}
 
-        .menu-item {
-            /* Size */
-            width:     15%;
-            height:    45%;
+		.menu {
+			/* Size */
+			height: 70%;
+		}
+
+		.menu-item {
+			/* Size */
+sorted by: top (suggested)
+
+			width:     15%;
+			height:    45%;
 			font-size: 450%;
 
-            /* Spacing */
-            margin:    0% 1%;
-        }
-    }
+			/* Spacing */
+			margin:    0% 1%;
+		}
+	}
 }
 
 /* For desktops only.*/
 @media only screen and (min-width: 768px) {
 
-    .title {
-        /* Size */
-        font-size: 200%;
-    }
+	.title {
+		/* Size */
+		font-size: 200%;
+	}
 
-    .header {
-        /* Size */
-        height:  20%;
+	.header {
+		/* Spacing */
+		padding: 0%;
+	}
 
-        /* Spacing */
-        padding: 0%;
-    }
+	.search-bar {
+		/* Size */
+		width:  40%;
+		height: 40%;
+	}
 
-    .search-bar {
-        /* Size */
-        width:  40%;
-        height: 40%;
-    }
+	/*.menu {
+	}*/
 
-    .menu {
-        /* Size */
-        height: 80%;
-    }
-
-    .menu-item {
-        /* Size */
-        width:     10%;
-        height:    25%;
-    }
+	.menu-item {
+		/* Size */
+		width:     10%;
+		height:    25%;
+		font-size: 500%;
+	}
 }
