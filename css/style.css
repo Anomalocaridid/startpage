@@ -34,7 +34,7 @@ html, body {
 	margin:      0.5%;
 
 	/* Appearance */
-	font-family: 'AIRBORNEGPBold';
+	font-family: 'AIRBORNEGPBold', sans-serif;
 	font-weight: bold;
 	color:       var(--main-color);
 }
