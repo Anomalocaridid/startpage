@@ -28,10 +28,10 @@ html, body {
 /* The text that reads "WELCOME BACK."  */
 .title {
 	/* Size */
-	font-size:   150%;
+	font-size:   7.25vw;
 
 	/* Spacing */
-	margin:      0.5%;
+	margin:      0.5vmin;
 
 	/* Appearance */
 	font-family: 'AIRBORNEGPBold', sans-serif;
@@ -45,7 +45,7 @@ html, body {
 	height:           20vh;
 
 	/* Spacing */
-	padding:          1% 0%;
+	padding:          0.5vh 0 0 0;
 
 	/* Appearence */
 	background-color: var(--header-color);
@@ -62,8 +62,8 @@ html, body {
 /* Search bar for DuckDuckGo  */
 .search-bar {
 	/* Size */
-	height:   40%;
-	width:    80%;
+	height:   7vh;
+	width:   90vw;
 
 	/* Content Formatting */
 	overflow: hidden;
@@ -105,12 +105,12 @@ a:active.menu-item {
 
 .menu-item {
 	/* Size */
-	width:           25%;
-	height:          25%;
-	font-size:       400%;
+	width:           25vw;
+	height:          20vh;
+	font-size:       18vmin;
 
 	/* Spacing */
-	margin:          0% 2%;
+	margin:          0vh 2vw;
 
 	/* Appearance */
 	color:           var(--main-color);
@@ -167,10 +167,8 @@ a:active.menu-item {
 	/* For landscape mode only. Everything before is for portrait mode. */
 	@media only screen and (min-aspect-ratio: 13/9) {
 
-		.title {
-			/* Size */
-			font-size: 250%;
-		}
+		/*.title {
+		}*/
 
 		.header {
 			/* Size */
@@ -211,10 +209,8 @@ a:active.menu-item {
 		font-size: 2.5vmax;
 	}
 
-	.header {
-		/* Spacing */
-		padding: 0vw;
-	}
+	/*.header {
+	}*/
 
 	.search-bar {
 		/* Size */
