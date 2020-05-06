@@ -129,9 +129,9 @@ a:active.menu-item {
 	a[href*="bandcamp"],
 	a[href*="discord"],
 	a[href*="protonmail"],
+	a[href*="invidio.us"]
 	a[href*="reddit"],
 	a[href*="soundcloud"],
-	a[href*="youtube"]
 	{
 		/* Content Formatting */
 		display: none;
@@ -149,7 +149,7 @@ a:active.menu-item {
 		}
 
 		.search-bar {
-			/* Sizhttps://derpsquid9.github.io/startpage/e */
+			/* Size */
 			height: 55%;
 		}
 
