@@ -129,9 +129,9 @@ a:active.menu-item {
 	a[href*="bandcamp"],
 	a[href*="discord"],
 	a[href*="protonmail"],
-	a[href*="invidio.us"],
 	a[href*="reddit"],
-	a[href*="soundcloud"]
+	a[href*="soundcloud"],
+	a[href*="stackoverflow"]
 	{
 		/* Content Formatting */
 		display: none;
