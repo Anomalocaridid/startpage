@@ -127,10 +127,10 @@ a:active.menu-item {
 	/* Links to be hidden on mobile but stay on desktop. */
 	a[href*="bandcamp"],
 	a[href*="discord"],
+	a[href*="openstreetmap"],
 	a[href*="protonmail"],
 	a[href*="reddit"],
-	a[href*="soundcloud"],
-	a[href*="stackoverflow"] {
+	a[href*="soundcloud"] {
 		/* Content Formatting */
 		display: none;
 	}
