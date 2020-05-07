@@ -1,20 +1,21 @@
 :root {
 	/* Color of text and icons */
-	--main-color:            #0ABDC6;
+	--main-color: #0abdc6;
 
 	/* Color to be used as an accent */
-	--detail-color:          #EA00D9;
+	--detail-color: #ea00d9;
 
 	/* Colors used as backgrounds */
-	--header-color:          #091833;
-	--menu-background-color: #000B1E;
-	--link-background-color: #133E7C;
+	--header-color: #091833;
+	--menu-background-color: #000b1e;
+	--link-background-color: #133e7c;
 }
 
-html, body {
+html,
+body {
 	/* Size */
 	height: 100%;
-	width:  100%;
+	width: 100%;
 
 	/* Spacing */
 	margin: 0;
@@ -24,46 +25,45 @@ html, body {
 	overflow: hidden;
 }
 
-
 /* The text that reads "WELCOME BACK."  */
 .title {
 	/* Size */
-	font-size:   7.25vw;
+	font-size: 7.25vw;
 
 	/* Spacing */
-	margin:      0.5vmin;
+	margin: 0.5vmin;
 
 	/* Appearance */
-	font-family: 'AIRBORNEGPBold', sans-serif;
+	font-family: "AIRBORNEGPBold", sans-serif;
 	font-weight: bold;
-	color:       var(--main-color);
+	color: var(--main-color);
 }
 
 /* The grey box at the top. */
 .header {
 	/* Size */
-	height:           20vh;
+	height: 20vh;
 
 	/* Spacing */
-	padding:          0.5vh 0 0 0;
+	padding: 0.5vh 0 0 0;
 
 	/* Appearence */
 	background-color: var(--header-color);
-	border-bottom:    3px solid var(--detail-color);
+	border-bottom: 3px solid var(--detail-color);
 
 	/* Content Formatting */
-	text-align:       center;
-	display:          flex;
-	flex-flow:        column nowrap;
-	justify-content:  space-around;
-	align-items:      center;
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 /* Search bar for DuckDuckGo  */
 .search-bar {
 	/* Size */
-	height:   7vh;
-	width:   90vw;
+	height: 7vh;
+	width: 90vw;
 
 	/* Content Formatting */
 	overflow: hidden;
@@ -72,74 +72,71 @@ html, body {
 /* The dark blue space that takes up most of the screen. */
 .menu {
 	/* Size */
-	width:            100vw;
-	height:           80vh;
+	width: 100vw;
+	height: 80vh;
 
 	/* Spacing */
-	margin:           0 auto;
+	margin: 0 auto;
 
 	/* Appearance */
 	background-color: var(--menu-background-color);
 
 	/* Content Formatting */
-	display:          flex;
-	flex-flow:        row wrap;
-	justify-content:  space-evenly;
-	align-items:      center;
-	align-content:    space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-around;
 }
 
 /* The links in the menu section */
 a:hover.menu-item {
 	/* Appearance */
 	background-color: var(--header-color);
-	border-color:     var(--header-color);
+	border-color: var(--header-color);
 }
 
 a:active.menu-item {
 	/* Appearance */
 	background-color: var(--link-background-color);
-	color:            var(--detail-color);
-	border-color:     var(--link-background-color);
+	color: var(--detail-color);
+	border-color: var(--link-background-color);
 }
 
 .menu-item {
 	/* Size */
-	width:           25vw;
-	height:          20vh;
-	font-size:       18vmin;
+	width: 25vw;
+	height: 20vh;
+	font-size: 18vmin;
 
 	/* Spacing */
-	margin:          0vh 2vw;
+	margin: 0vh 2vw;
 
 	/* Appearance */
-	color:           var(--main-color);
-	border:          3px solid var(--detail-color);
+	color: var(--main-color);
+	border: 3px solid var(--detail-color);
 
 	/* Content Formatting */
-	display:         flex;
+	display: flex;
 	justify-content: center;
-	align-items:     center;
+	align-items: center;
 }
 
 /* For phones only. */
 @media only screen and (max-width: 768px) {
-
 	/* Links to be hidden on mobile but stay on desktop. */
 	a[href*="bandcamp"],
 	a[href*="discord"],
 	a[href*="protonmail"],
 	a[href*="reddit"],
 	a[href*="soundcloud"],
-	a[href*="stackoverflow"]
-	{
+	a[href*="stackoverflow"] {
 		/* Content Formatting */
 		display: none;
 	}
 
 	/* For when a soft keyboard is out */
 	@media only screen and (orientation: landscape) {
-
 		/*.title {
 		}*/
 
@@ -160,19 +157,18 @@ a:active.menu-item {
 
 		.menu-item {
 			/* Size */
-			font-size: 325%
+			font-size: 325%;
 		}
 	}
 
 	/* For landscape mode only. Everything before is for portrait mode. */
 	@media only screen and (min-aspect-ratio: 13/9) {
-
 		/*.title {
 		}*/
 
 		.header {
 			/* Size */
-			height:  30%;
+			height: 30%;
 
 			/* Spacing */
 			padding: 0%;
@@ -191,19 +187,18 @@ a:active.menu-item {
 		.menu-item {
 			/* Size */
 
-			width:     15%;
-			height:    45%;
+			width: 15%;
+			height: 45%;
 			font-size: 450%;
 
 			/* Spacing */
-			margin:    0% 1%;
+			margin: 0% 1%;
 		}
 	}
 }
 
 /* For desktops only.*/
 @media only screen and (min-width: 768px) {
-
 	.title {
 		/* Size */
 		font-size: 2.5vmax;
@@ -214,7 +209,7 @@ a:active.menu-item {
 
 	.search-bar {
 		/* Size */
-		width:  40vw;
+		width: 40vw;
 		height: 8vh;
 	}
 
@@ -223,11 +218,11 @@ a:active.menu-item {
 
 	.menu-item {
 		/* Size */
-		width:     10vw;
-		height:    20vh;
+		width: 10vw;
+		height: 20vh;
 		font-size: 13vmin;
 
 		/* Spacing */
-		margin:      0vh 2vw;
+		margin: 0vh 2vw;
 	}
 }
